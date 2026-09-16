@@ -1,10 +1,10 @@
-# Anubis Chain subgraph example
+# Anubis Chain subgraph starter
 
-Example [The Graph](https://thegraph.com/) subgraph for **Anubis Mainnet**.
+Starter [The Graph](https://thegraph.com/) subgraph for **Anubis Mainnet** — clone, point at your contract, publish.
 
 Anubis is listed as a supported network: [thegraph.com/docs/en/supported-networks/anubis](https://thegraph.com/docs/en/supported-networks/anubis/).
 
-This repository is **development source**: a clone-and-adapt template. It is not a hosted Graph Node and not The Graph’s docs site.
+This repository is **development source**: a starter template builders fork. It is not a hosted Graph Node and not The Graph’s docs site.
 
 - Live explorer: [AnubisScan](https://anubisscan.io/)
 - Public RPC: `https://rpc.anubispace.org`
@@ -33,7 +33,9 @@ npm run codegen
 npm run build
 ```
 
-Point `subgraph.yaml` at your contract address, ABI, and **start block** (the deployment block on [AnubisScan](https://anubisscan.io/) — do not scan from genesis on a long chain).
+Point `subgraph.yaml` at your contract address, ABI, and **start block** (the deployment block on [AnubisScan](https://anubisscan.io/)).
+
+> The checked-in example uses DAI `0x83fd06…` with `startBlock: 1` only as a placeholder so `graph build` works. For any real subgraph, set `startBlock` to the contract’s deployment block — indexing from block 1 on a busy chain wastes Indexer time and money.
 
 Initialize a new project with Graph CLI if you prefer the wizard (`ethereum` protocol, network identifier `anubis`):
 
@@ -54,8 +56,8 @@ environment:
 Then:
 
 ```sh
-graph create --node http://localhost:8020/ anubis-subgraph-example
-graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 anubis-subgraph-example
+graph create --node http://localhost:8020/ anubis-subgraph-starter
+graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 anubis-subgraph-starter
 ```
 
 See [graph-node](https://github.com/graphprotocol/graph-node) for the Docker stack.

@@ -1,3 +1,5 @@
+# Example DAI Transfer indexer. Replace address/ABI/startBlock for your contract.
+# startBlock: 1 is a PLACEHOLDER — use the deployment block from AnubisScan in production.
 specVersion: 1.0.0
 schema:
   file: ./schema.graphql
