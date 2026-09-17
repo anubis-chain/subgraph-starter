@@ -7,6 +7,9 @@
     "codegen": "graph codegen",
     "build": "graph build"
   },
+  "engines": {
+    "node": ">=24"
+  },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.97.0",
     "@graphprotocol/graph-ts": "^0.35.1"

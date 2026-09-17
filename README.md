@@ -1,5 +1,8 @@
 # Anubis Chain subgraph starter
 
+[![CI](https://github.com/anubis-chain/subgraph-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/anubis-chain/subgraph-starter/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Starter [The Graph](https://thegraph.com/) subgraph for **Anubis Mainnet** — clone, point at your contract, publish.
 
 Anubis is listed as a supported network: [thegraph.com/docs/en/supported-networks/anubis](https://thegraph.com/docs/en/supported-networks/anubis/).
@@ -83,3 +86,7 @@ graph publish
 ## License
 
 MIT. Safe/upstream ABIs you swap in keep their original licenses.
+
+## Security
+
+Please report vulnerabilities privately as described in [SECURITY.md](SECURITY.md). Do not include exploit details or credentials in a public issue.

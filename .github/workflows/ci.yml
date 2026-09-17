@@ -19,3 +19,9 @@ jobs:
       - run: npm ci
       - run: npm run codegen
       - run: npm run build
+      - name: Reject legacy public explorer links
+        run: |
+          if grep -R --line-number --fixed-strings "browser.anubispace.org" README.md subgraph.yaml; then
+            echo "Use https://anubisscan.io/ for public explorer links." >&2
+            exit 1
+          fi
