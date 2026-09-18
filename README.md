@@ -7,8 +7,6 @@ Starter [The Graph](https://thegraph.com/) subgraph for **Anubis Mainnet** — c
 
 Anubis is listed as a supported network: [thegraph.com/docs/en/supported-networks/anubis](https://thegraph.com/docs/en/supported-networks/anubis/).
 
-This repository is **development source**: a starter template builders fork. It is not a hosted Graph Node and not The Graph’s docs site.
-
 - Live explorer: [AnubisScan](https://anubisscan.io/)
 - Public RPC: `https://rpc.anubispace.org`
 - Network id in `subgraph.yaml`: `anubis` (must match The Graph registry)
